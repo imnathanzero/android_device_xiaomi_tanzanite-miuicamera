@@ -1,5 +1,4 @@
 persist.vendor.camera.privapp.list=com.android.camera
 ro.com.google.lens.oem_camera_package=com.android.camera
-ro.product.mod_device=rodin_global
 ro.miui.notch=1
 camera.feature.clone=1

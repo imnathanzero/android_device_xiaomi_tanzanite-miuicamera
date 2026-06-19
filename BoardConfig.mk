@@ -4,15 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-MIUICAMERA_PATH := device/xiaomi/rodin-miuicamera
+MIUICAMERA_PATH := device/xiaomi/tanzanite-miuicamera
 CAMERA_PACKAGE_NAME := com.android.camera
 
 # Properties
-TARGET_SYSTEM_EXT_PROP += $(MIUICAMERA_PATH)/system_ext.prop
+TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(MIUICAMERA_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(MIUICAMERA_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
-include vendor/xiaomi/rodin-miuicamera/BoardConfigVendor.mk
+include vendor/xiaomi/tanzanite-miuicamera/BoardConfigVendor.mk

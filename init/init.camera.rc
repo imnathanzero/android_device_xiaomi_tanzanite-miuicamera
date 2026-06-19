@@ -1,7 +1,0 @@
-on post-fs-data
-    symlink /odm/etc/camera/72.png /data/vendor/camera/72.png
-    symlink /odm/etc/camera/73.png /data/vendor/camera/73.png
-    symlink /odm/etc/camera/xiaomi/configs /data/vendor/camera/watermarks
-    chown cameraserver camera /data/vendor/camera/72.png
-    chown cameraserver camera /data/vendor/camera/73.png
-    chown cameraserver camera /data/vendor/camera/watermarks
