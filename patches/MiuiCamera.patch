@@ -12583,24 +12583,7 @@ index bce1e858..d4d397c4 100644
 +    goto :goto_0
  
      invoke-static {}, LL3/n;->g()LL3/n;
- 
-diff --git a/smali/com/xiaomi/cam/watermark/b.smali b/smali/com/xiaomi/cam/watermark/b.smali
-index e03adc93..6c2fe7bd 100644
---- a/smali/com/xiaomi/cam/watermark/b.smali
-+++ b/smali/com/xiaomi/cam/watermark/b.smali
-@@ -2553,6 +2553,12 @@
- 
-     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
- 
-+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-+
-+    move-result v1
-+
-+    if-nez v1, :goto_7
-+
-     sget-object v1, LQg/a;->b:Ljava/nio/charset/Charset;
- 
-     invoke-static {v2, v0, v1}, Lvf/j;->F(Ljava/io/File;Ljava/lang/String;Ljava/nio/charset/Charset;)V
+
 diff --git a/smali_classes2/C9/d.smali b/smali_classes2/C9/d.smali
 index 69e08e0d..3af96fd1 100644
 --- a/smali_classes2/C9/d.smali
@@ -12614,6 +12597,7 @@ index 69e08e0d..3af96fd1 100644
  
      :goto_2
      if-eqz v3, :cond_3
+
 diff --git a/smali_classes2/Sg/I.smali b/smali_classes2/Sg/I.smali
 index f676f3e8..3cbcd9c4 100644
 --- a/smali_classes2/Sg/I.smali
